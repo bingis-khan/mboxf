@@ -1,0 +1,22 @@
+name:                mbox
+version:             0.3.4
+synopsis:            Read and write standard mailbox files.
+description:         Read and write standard mailbox (mboxrd) files.
+category:            system, text, data
+license:             BSD3
+license-file:        LICENSE
+author:              Gershom Bazerman
+maintainer:          gershomb@gmail.com
+
+dependencies:
+  - base >= 4 && < 6
+  - safe
+  - time
+  - time-locale-compat
+  - text
+
+library:
+  exposed-modules:
+    - Data.MBox
+    - Data.MBox.String
+  ghc-options: -Wall

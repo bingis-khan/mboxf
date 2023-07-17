@@ -1,0 +1,31 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           mbox
+version:        0.3.4
+synopsis:       Read and write standard mailbox files.
+description:    Read and write standard mailbox (mboxrd) files.
+category:       system, text, data
+author:         Gershom Bazerman
+maintainer:     gershomb@gmail.com
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Data.MBox
+      Data.MBox.String
+  other-modules:
+      Paths_mbox
+  ghc-options: -Wall
+  build-depends:
+      base >=4 && <6
+    , safe
+    , text
+    , time
+    , time-locale-compat
+  default-language: Haskell2010
